@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		6815EDB9283E40E300D733F9 /* OptisolFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 6815EDB8283E40E300D733F9 /* OptisolFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6815EDC0283E46B000D733F9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815EDBF283E46B000D733F9 /* Validator.swift */; };
+		68CA21FA283F82DE00010B01 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CA21F9283F82DE00010B01 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6815EDB5283E40E300D733F9 /* OptisolFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptisolFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6815EDB8283E40E300D733F9 /* OptisolFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptisolFrameWork.h; sourceTree = "<group>"; };
 		6815EDBF283E46B000D733F9 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		68CA21F9283F82DE00010B01 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CA21FA283F82DE00010B01 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +36,7 @@
 			children = (
 				6815EDB7283E40E300D733F9 /* OptisolFrameWork */,
 				6815EDB6283E40E300D733F9 /* Products */,
+				68CA21F8283F82DE00010B01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +55,14 @@
 				6815EDBF283E46B000D733F9 /* Validator.swift */,
 			);
 			path = OptisolFrameWork;
+			sourceTree = "<group>";
+		};
+		68CA21F8283F82DE00010B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68CA21F9283F82DE00010B01 /* opencv2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +284,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -305,6 +321,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

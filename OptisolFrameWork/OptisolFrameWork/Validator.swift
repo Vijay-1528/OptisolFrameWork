@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import opencv2
 
 public struct Validator {
     public static func validEmail(_ email: String) -> Bool {
@@ -16,5 +17,6 @@ public struct Validator {
     
     public static func printStatement() {
         print("Hi this is the framework")
+        print(opencv2.Date.self)
     }
 }
